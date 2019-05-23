@@ -19,8 +19,8 @@
             </ul>
             <ul class="user-navigation">
                 <li class="search"><a href="#"></a></li>
-                <li class="login-link"><a href="#">Вход</a></li>
-                <li class="cart filled-cart"><a href="#">2 товара</a></li>
+                <li class="login-link"><a href="login.html">Вход</a></li>
+                <li class="cart filled-cart"><a href="cart.html">2 товара</a></li>
             </ul>
         </nav>
         <p class="info">
@@ -201,13 +201,14 @@
 
         </section>
     </main>
+
     <footer class="main-footer">
         <div class="footer-social">
             <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Vkontakte</a></li>
+                <li><a aria-label="Глэйси в Твиттере" href="#"></a></li>
+                <li><a aria-label="Глэйси в Инстаграм" href="#"></a></li>
+                <li><a aria-label="Глэйси на Фэйсбуке" href="#"></a></li>
+                <li><a aria-label="Глэйси в Вконтакте" href="#"></a></li>
             </ul>
         </div>
 
@@ -221,20 +222,34 @@
                 <li><a href="#">Экологические стандарты</a>
                 </li>
             </ul>
+        </div>
+
+        <div class="footer-copyright">
+            <a class="footer-copyright-logo" href="https://htmlacademy.ru/">
+                <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Академии">
+            </a>
+            <p class="footer-copyright-text">
+                Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a>
+                &copy; 2017</p>
 
 
-            <div class="footer-copyright">
-                <a class="footer-copyright-logo" href="https://htmlacademy.ru/">
-                    <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Академии">
-                </a>
-                <p class="footer-copyright-text">
-                    Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a>
-                    &copy; 2017</p>
-
-            </div>
 
         </div>
     </footer>
+
+    <!--Pop-up корзины-->
+    <section class="modal modal-cart">
+        <h2 class="visually-hidden">Корзина</h2>
+        <button type="button" class="delete-item">Закрыть</button>
+        <ul class="cart-list">
+            <li class="cart-item">
+                <a href="catalog-item.html">Пломбир с апельсиновым джемом</a>
+            </li>
+            <li class="cart-item"><a href="catalog-item.html">Клубничный пломбир с присыпкой из белого шоколада</a></li>
+        </ul>
+        <p>Итого: 750 руб.</p>
+        <a class="button" href="#">Оформить заказ</a>
+    </section>
 
 </body>
 

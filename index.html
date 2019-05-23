@@ -19,8 +19,8 @@
             </ul>
             <ul class="user-navigation">
                 <li class="search"><a href="#"></a></li>
-                <li class="login-link"><a href="#">Вход</a></li>
-                <li class="cart"><a href="#">Пусто</a></li>
+                <li class="login-link"><a href="login.html">Вход</a></li>
+                <li class="cart"><a href="cart.html">Пусто</a></li>
             </ul>
         </nav>
     </header>
@@ -46,46 +46,93 @@
 
         <section class="subscribe">
             <h2 class="visually-hidden">Подпишитесь</h2>
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не псамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <!--здесь будет форма -->
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="get">
+                <input type="email" name="email" placeholder="Электронная почта">
+                <button type="submit" class="button">Отправить</button>
+            </form>
         </section>
 
-        <footer class="main-footer">
-            <div class="footer-social">
-                <ul>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Vkontakte</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-navigation">
-                <ul>
-                    <li><a href="#">Для поставщиков</a></li>
-                    <li><a href="#">О производстве</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Наши документы</a></li>
-                    <li><a href="#">Экологические стандарты</a>
-                    </li>
-                </ul>
-
-
-                <div class="footer-copyright">
-                    <a class="footer-copyright-logo" href="https://htmlacademy.ru/">
-                        <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Академии">
-                    </a>
-                    <p class="footer-copyright-text">Сделано в
-                        <a href="https://htmlacademy.ru/">HTML Academy</a>
-                        &copy; 2017</p>
-
-                </div>
-
-            </div>
-        </footer>
-
+        <section class="map">
+            <h2 class="visually-hidden">Где мы находимся</h2>
+            <p>
+                <img src="img/map.jpg" width="1200" height="430" alt="Адрес офиса и магазина улица Большая Конюшенная 19/8, Санкт-Петербург">
+            </p>
+        </section>
     </main>
+
+    <footer class="main-footer">
+        <div class="footer-social">
+            <ul>
+                <li><a aria-label="Глэйси в Твиттере" href="#"></a></li>
+                <li><a aria-label="Глэйси в Инстаграм" href="#"></a></li>
+                <li><a aria-label="Глэйси на Фэйсбуке" href="#"></a></li>
+                <li><a aria-label="Глэйси в Вконтакте" href="#"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-navigation">
+            <ul>
+                <li><a href="#">Для поставщиков</a></li>
+                <li><a href="#">О производстве</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Наши документы</a></li>
+                <li><a href="#">Экологические стандарты</a>
+                </li>
+            </ul>
+
+
+            <div class="footer-copyright">
+                <a class="footer-copyright-logo" href="https://htmlacademy.ru/">
+                    <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Академии">
+                </a>
+                <p class="footer-copyright-text">Сделано в
+                    <a href="https://htmlacademy.ru/">HTML Academy</a>
+                    &copy; 2017</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!--Pop-up форма обратной связи-->
+    <section class="modal modal-feedback">
+        <h2 class="feedback-header">Мы обязательно вам ответим!</h2>
+        <button type="button" class="modal-close">Закрыть</button>
+        <form class="feedback-form" method="get" action="https://echo.htmlacademy.ru">
+            <input type="text" name="name" placeholder="Как вас зовут?">
+            <input type="email" name="email" placeholder="Ваша почта для ответа?">
+            <textarea placeholder="Напишите что нибудь..."></textarea>
+            <button type="submit" class="button">Отправить</button>
+        </form>
+    </section>
+
+    <!--Pop-up строка поиска-->
+    <section class="modal modal-search">
+        <h2 class="visually-hidden">Строка поиска</h2>
+        <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+            <input type="text" name="search" placeholder="Что ищем?">
+        </form>
+    </section>
+
+    <!--Pop-up login.html-->
+    <section class="modal modal-login">
+        <h2 class="visually-hidden">Вход</h2>
+        <form class="login-form" method="get" action="https://echo.htmlacademy.ru">
+            <label class="visually-hidden" for="user-email">Email</label>
+            <input type="email" name="email" placeholder="Электронная почта" id="user-email">
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input type="password" name="password" placeholder="Пароль" id="user-password">
+            <button type="submit" class="button">Войти</button>
+            <p>
+                <a href="#" class="restore">Забыли пароль?</a>
+                <a href="#" class="newcheck-in">Новая регистрация</a>
+            </p>
+        </form>
+    </section>
+
+
 </body>
 
 </html>
