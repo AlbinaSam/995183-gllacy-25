@@ -55,7 +55,7 @@
         <section class="subscribe">
             <h2 class="visually-hidden">Подпишитесь</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="get">
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
                 <input type="email" name="email" placeholder="Электронная почта">
                 <button type="submit" class="button">Отправить</button>
             </form>
@@ -108,7 +108,7 @@
     <section class="modal modal-feedback">
         <h2 class="feedback-header">Мы обязательно вам ответим!</h2>
         <button type="button" class="modal-close">Закрыть</button>
-        <form class="feedback-form" method="get" action="https://echo.htmlacademy.ru">
+        <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
             <input type="text" name="name" placeholder="Как вас зовут?">
             <input type="email" name="email" placeholder="Ваша почта для ответа?">
             <textarea placeholder="Напишите что нибудь..."></textarea>
@@ -119,7 +119,7 @@
     <!--Pop-up строка поиска-->
     <section class="modal modal-search">
         <h2 class="visually-hidden">Строка поиска</h2>
-        <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+        <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
             <input type="text" name="search" placeholder="Что ищем?">
         </form>
     </section>
@@ -127,7 +127,7 @@
     <!--Pop-up login.html-->
     <section class="modal modal-login">
         <h2 class="visually-hidden">Вход</h2>
-        <form class="login-form" method="get" action="https://echo.htmlacademy.ru">
+        <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
             <label class="visually-hidden" for="user-email">Email</label>
             <input type="email" name="email" placeholder="Электронная почта" id="user-email">
             <label class="visually-hidden" for="user-password">Пароль</label>
