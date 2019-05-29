@@ -7,14 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-   
+
 </head>
 
 <body>
-    <header class="main-header">
+    <header class="main-header container">
         <nav class="main-navigation">
             <a href="index.html" class="main-header-logo">
-                <img src="img/logo.svg" width="" height="" alt="Логотип магазина мороженого " Глэйси"">
+                <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого " Глэйси"">
             </a>
             <ul class="site-navigation">
                 <li><a class="site-navigation-current" hreF="catalog.html">Каталог</a>
@@ -35,19 +35,24 @@
                 <li class="cart filled-cart"><a href="cart.html">2 товара</a></li>
             </ul>
         </nav>
-        <p class="info">
-            <b>С 10 до 20, ежедневно</b>
-            <a href="tel:88124502525">8 812 450-25-25</a>
-        </p>
+
     </header>
 
     <main class="container">
+        <div class="breadcrumbs-container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a class="breadcrumbs-current">Сливочное</a></li>
+            </ul>
 
-        <ul class="breadcrumbs">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a class="breadcrumbs-current">Сливочное</a></li>
-        </ul>
+
+            <p class="info">
+                <b>С 10 до 20, ежедневно</b>
+                <a href="tel:88124502525">8 812 450-25-25</a>
+            </p>
+        </div>
+
         <h1 class="page-title">Сливочное мороженое</h1>
 
         <section class="catalog">
@@ -214,13 +219,13 @@
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
         <div class="footer-social">
             <ul>
-                <li><a aria-label="Глэйси в Твиттере" href="#"></a></li>
-                <li><a aria-label="Глэйси в Инстаграм" href="#"></a></li>
-                <li><a aria-label="Глэйси на Фэйсбуке" href="#"></a></li>
-                <li><a aria-label="Глэйси в Вконтакте" href="#"></a></li>
+                <li><a aria-label="Глэйси в Твиттере" href="#">Твиттер</a></li>
+                <li><a aria-label="Глэйси в Инстаграм" href="#">Инстаграм</a></li>
+                <li><a aria-label="Глэйси на Фэйсбуке" href="#">Фэйсбук</a></li>
+                <li><a aria-label="Глэйси в Вконтакте" href="#">Вконтакте</a></li>
             </ul>
         </div>
 
@@ -238,7 +243,7 @@
 
         <div class="footer-copyright">
             <a class="footer-copyright-logo" href="https://htmlacademy.ru/">
-                <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Академии">
+                <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Академии">
             </a>
             <p class="footer-copyright-text">
                 Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a>

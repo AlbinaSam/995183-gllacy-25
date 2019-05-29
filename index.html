@@ -10,8 +10,9 @@
 </head>
 
 <body>
-    <header class="main-header">
+    <header class="main-header container">
         <nav class="main-navigation">
+           
             <a class="main-header-logo">
                 <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого " Глэйси"">
             </a>
@@ -33,6 +34,7 @@
                 <li class="login-link"><a href="login.html">Вход</a></li>
                 <li class="cart"><a href="cart.html">Пусто</a></li>
             </ul>
+            
         </nav>
     </header>
 
@@ -41,14 +43,17 @@
 
         <section class="features">
             <h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+            
             <ul class="features-list">
-                <li class="features-item1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-                <li class="features-item2">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья. </li>
-                <li class="feature-item3">Закупка ингредиентов произволится только у проверенных фермерских хозяйств и компанийй, с которыми нас связывает долговременное сотрудничество.</li>
-                <li class="feature-item4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+                <li class="features-item features-item-left features-item-top">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+                <li class="features-item features-item-right features-item-top">Закупка ингредиентов произволится только у проверенных фермерских хозяйств и компанийй, с которыми нас связывает долговременное сотрудничество.</li>
+                <li class="features-item features-item-left">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
+                <li class="features-item features-item-right">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
             </ul>
+       
         </section>
 
+       <div class="index-columns">
         <article class="blog-news">
             <p>Новое в нашем блоге</p>
             <h2><a class="blog-news-heading" href="#">10 способов сервировки<br> фруктовых щербетов к<br> столу</a></h2>
@@ -61,20 +66,20 @@
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
                 <input type="email" name="email" placeholder="Электронная почта">
-                <button type="submit" class="button">Отправить</button>
+                <button type="submit" class="button subscribe-button">Отправить</button>
             </form>
             </div>
         </section>
-
+</div>
+        </main>
+       
         <section class="map">
             <h2 class="visually-hidden">Где мы находимся</h2>
-            <p>
-                <img src="img/map.jpg" width="1200" height="430" alt="Адрес офиса и магазина улица Большая Конюшенная 19/8, Санкт-Петербург">
-            </p>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCveyCiO" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
         </section>
-    </main>
+   
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
         <div class="footer-social">
             <ul>
                 <li><a aria-label="Глэйси в Твиттере" href="#">Твиттер</a></li>
@@ -98,7 +103,7 @@
 
             <div class="footer-copyright">
                 <a class="footer-copyright-logo" href="https://htmlacademy.ru/">
-                    <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML Академии">
+                    <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Академии">
                 </a>
                 <p class="footer-copyright-text">Сделано в
                     <a href="https://htmlacademy.ru/">HTML Academy</a>
