@@ -102,13 +102,15 @@ input[type="radio"].visually-hidden {
 }
 
 .sub-catalog {
-    display: none;
+   display: none;
     position: absolute;
     top: 38px;
     left: -8px;
     z-index: 10;
     border-radius: 5px;
     background-color: #f8f7f4;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    
 }
 
 .sub-catalog a {
@@ -119,7 +121,7 @@ input[type="radio"].visually-hidden {
     white-space: nowrap;
     font-size: 14px;
     line-height: 16px;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .sub-catalog a:hover,
@@ -133,19 +135,35 @@ input[type="radio"].visually-hidden {
 
 .site-nav-catalog:hover .sub-catalog {
     display: block;
+    
 }
 
 .sub-catalog li:first-child a {
     font-weight: bold;
+    margin-bottom: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-.sub-catalog hr {
-    margin: 1px auto;
-    padding: 0;
+.sub-catalog-current {
+    background-color: #d07058;
+}
+
+.sub-catalog .sub-catalog-current:hover,
+.sub-catalog .sub-catalog-current:focus {
+    background-color: #d07058;
+}
+
+.new-products::after {
+    content: "";
     width: 128px;
-    opacity: 0.2;
+    height: 1px;
+    position: absolute;
+    top: 38px;
+    left: 6px;
+    right: 9px;
+    background-color: rgb(0, 0, 0, 0.2);
+   
 }
 
 .sub-catalog li:last-child a {
@@ -159,7 +177,7 @@ input[type="radio"].visually-hidden {
     width: 265px;
 }
 
-.user-navigation li {
+.user-navigation > li {
     position: relative;
     padding-bottom: 7px;
 }
@@ -199,6 +217,7 @@ input[type="radio"].visually-hidden {
     top: 37px;
     right: 0;
     padding: 20px 15px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .search-form input {
@@ -238,6 +257,7 @@ input[type="radio"].visually-hidden {
     width: 241px;
     height: 174px;
     padding: 20px 16px 20px 18px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .login-form {
@@ -322,6 +342,7 @@ input[type="radio"].visually-hidden {
     width: 510px;
     padding: 20px 15px;
     text-align: right;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .user-nav-cart:hover .modal-cart {
@@ -333,7 +354,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     align-items: center;
 
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .delete-item {
@@ -360,6 +381,7 @@ input[type="radio"].visually-hidden {
     line-height: 16px;
     font-weight: normal;
     color: #323232;
+
 }
 
 .cart-item .weight {
@@ -385,17 +407,24 @@ input[type="radio"].visually-hidden {
     color: #323232;
 }
 
-.modal-cart hr {
-    color: #cacac7;
-}
 
 .modal-cart .cart-sum {
     color: #323232;
     font-size: 15px;
     line-height: 18px;
-    margin: 15px 0;
+    margin: 35px 0 15px;
     padding: 0;
     text-align: right;
+}
+
+.cart-sum::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    right: 15px;
+   bottom: 115px;
+    height: 1px;
+    background-color: #cacac7;
 }
 
 .modal-cart .button {
@@ -404,9 +433,10 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
-    display: none;
+   display: none;
     position: fixed;
-    top: 337px;
+    margin-top: -220px;
+    top: 50%;
     margin-left: -239px;
     left: 50%;
     z-index: 10;
@@ -779,6 +809,8 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .filled-cart {
     min-width: 86px;
+    background-color: #f8f7f4;
+    color: #323232;
 }
 
 
@@ -871,11 +903,14 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     position: relative;
     width: 267px;
     margin-right: 25px;
     margin-bottom: 35px;
 }
+
+
 
 .catalog-item:nth-child(4n) {
     margin-right: 0;
@@ -883,6 +918,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-image {
     display: block;
+    
 }
 
 .catalog-item-image img {
@@ -891,20 +927,23 @@ input[type="radio"].visually-hidden {
 
 .catalog-item h3 {
     color: #ffffff;
+    display: inline;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
     text-decoration: none;
     margin: 0;
     text-align: center;
-    margin: 10px 6px 0;
-    text-decoration-line: underline;
-    text-decoration-color: rgb(255, 255, 255, 0.2);
-    text-underline-position: under;
+    background-image: linear-gradient(transparent 50%, rgba(255, 255, 255, 0.2) 50%);
+    background-position: 0 bottom;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    margin: 0 5px;
 }
 
 .catalog-item p {
     margin: 0;
+    margin-bottom: 13px;
 }
 
 .catalog-item b {
@@ -955,12 +994,25 @@ input[type="radio"].visually-hidden {
 
 }
 
+
+
 .main-footer {
     display: flex;
+    position: relative;
     align-items: center;
     padding-top: 18px;
     padding-bottom: 25px;
     width: 1146px;
+}
+
+.main-footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 0.3;
 }
 
 .footer-social ul,
@@ -1021,9 +1073,6 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
 }
 
-.container hr {
-    opacity: 0.5;
-}
 
 .footer-navigation {
     display: flex;
@@ -1043,34 +1092,13 @@ input[type="radio"].visually-hidden {
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
-    padding: 0 0 0 30px;
     margin-top: 6px;
-}
-
-/*
-.footer-nav-link::after {
-    content: "";
-    position: absolute;
-    top: 16px;
-    left: 30px;
-    width: calc(100% - 30px);
-    height: 1px;
-    background-color: rgb(255, 255, 255, 0.2);
-}
-*/
-.footer-nav-link {
-    font-family: "Roboto", Arial, sans-serif;
-    display: inline;
+    margin-right: 30px;
     background-image: linear-gradient(transparent 50%,
         rgba(255, 255, 255, 0.2) 50%);
     background-repeat: no-repeat;
     background-position: 0 bottom;
     background-size: 100% 1px;
-    color: #fff;
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
-    text-decoration: none;
 }
 
 
@@ -1090,7 +1118,7 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
     top: 3px;
-    left: 9px;
+    left: -22px;
     width: 15px;
     height: 15px;
     background-image: url(../img/heart.svg);
