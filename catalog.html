@@ -99,7 +99,7 @@
                                 <span class="total-sum">450 руб.</span>
                             </li>
                         </ul>
-                    
+
                         <p class="cart-sum">Итого: 750 руб.</p>
                         <a class="button" href="#">Оформить заказ</a>
                     </section>
@@ -122,6 +122,78 @@
         </div>
 
         <h1 class="page-title">Сливочное мороженое</h1>
+
+
+
+
+        <section class="filter">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+
+                <div class="select-filter">
+                    <span class="filter-name">Сортировка:</span>
+                    <select name="sorting">
+                        <option value="1" class="filter-value select-option">по популярности</option>
+                        <option value="2" class="filter-value select-option">сначала недорогие</option>
+                        <option value="3" class="filter-value select-option">сначала дорогие</option>
+                        <option value="4" class="filter-value select-option">по жирности</option>
+                    </select>
+                </div>
+
+
+                <div class="range-filter">
+
+                    <div class="price-controls">
+                        <p class="filter-name">Цена:</p>
+                        <label class="min-price"><input type="text" name="min-price" value="100">руб.&mdash;</label>
+                        <label class="max-price"><input type="text" name="max-price" value="500">руб.</label>
+
+                    </div>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                                <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
+                                <circle fill="#FFF" cx="10" cy="10" r="10" />
+                                <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg></div>
+                        <div class="range-toggle range-toggle-max"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                                <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
+                                <circle fill="#FFF" cx="10" cy="10" r="10" />
+                                <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg></div>
+                    </div>
+                </div>
+
+
+                <div class="radio-filter">
+                    <span class="filter-name">Жирность:</span>
+                    <p>
+                        <label><input class="visually-hidden" type="radio" name="fat" value="1"><span class="radio-button-indicator"></span><span class="filter-value">0%</span></label>
+                        <label><input class="visually-hidden" type="radio" name="fat" value="2" checked><span class="radio-button-indicator"></span><span class="filter-value">до 10%</span></label>
+                        <label><input class="visually-hidden" type="radio" name="fat" value="3"><span class="radio-button-indicator"></span><span class="filter-value">до 30%</span></label>
+                        <label><input class="visually-hidden" type="radio" name="fat" value="4"><span class="radio-button-indicator"></span><span class="filter-value">выше 30%</span></label>
+                    </p>
+                </div>
+
+
+                <div class="checkbox-filter">
+                    <span class="filter-name">Наполнители:</span>
+                    <p>
+                        <label><input class="visually-hidden" type="checkbox" name="chocolate" checked><span class="checkbox-indicator"></span><span class="filter-value">шоколадные</span></label>
+                        <label><input class="visually-hidden" type="checkbox" name="sugar-powder" checked><span class="checkbox-indicator"></span><span class="filter-value">сахарные присыпки</span></label>
+                        <label><input class="visually-hidden" type="checkbox" name="fruit"><span class="checkbox-indicator"></span><span class="filter-value">фрукты</span></label>
+                        <label><input class="visually-hidden" type="checkbox" name="syrup"><span class="checkbox-indicator"></span><span class="filter-value">сиропы</span></label>
+                        <label><input class="visually-hidden" type="checkbox" name="jam"><span class="checkbox-indicator"></span><span class="filter-value">джемы</span> </label>
+                    </p>
+                </div>
+
+
+                <button type="submit" class="filter-button">Применить</button>
+            </form>
+        </section>
+
+
+
 
         <section class="catalog">
             <h2 class="visually-hidden">Список видов мороженого</h2>
@@ -293,9 +365,22 @@
                         <span>/кг</span>
                     </p>
                 </li>
+
+            </ul>
+            <ul class="pagination">
+                <li class="pagination-item"><a href="#" class="disabled"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+                            <path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z" /></svg></a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link pagination-link-current">1</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
+                <li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
+                <li class="pagination-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+                            <path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z" /></svg></a></li>
+
             </ul>
         </section>
-     
+
     </main>
 
     <footer class="main-footer container">
@@ -334,11 +419,11 @@
         </div>
 
         <div class="footer-copyright">
-            <a class="footer-copyright-logo" href="https://htmlacademy.ru/">
+            <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Академии">
             </a>
             <p class="footer-copyright-text">
-                Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a>
+                Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
                 &copy; 2019</p>
 
         </div>
