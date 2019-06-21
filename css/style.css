@@ -51,11 +51,11 @@ input[type="radio"].visually-hidden {
 }
 
 .site-wrapper::before {
-    background-image: url("img/slider-item2.png");
+    background-image: url("../img/slider-item2.png");
 }
 
 .site-wrapper::after {
-    background-image: url("img/slider-item3.png");
+    background-image: url("../img/slider-item3.png");
 }
 
 .main-navigation {
@@ -685,7 +685,7 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     position: absolute;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     width: 61px;
     height: 61px;
 }
@@ -708,6 +708,8 @@ input[type="radio"].visually-hidden {
     background-position: 0 center;
     background-size: 100% 2px;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
 }
 
 .hit-list-item h3:hover,
@@ -719,6 +721,8 @@ input[type="radio"].visually-hidden {
 
 .hit-list-image img {
     border-radius: 50%;
+    z-index: 2;
+    position: relative
 }
 
 .hit-list-item p {
@@ -741,6 +745,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 209px;
     left: 0;
+    z-index: 2;
 }
 
 .hit-list-item .preview-button {
@@ -763,7 +768,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: -6px;
     left: -12px;
-    z-index: -1;
+    z-index: 1;
     width: 293px;
     height: 405px;
     background: rgba(248, 247, 244, 0.2);
@@ -909,7 +914,6 @@ input[type="radio"].visually-hidden {
 .blog-news-heading:focus,
 .blog-news-heading:active {
     color: #e84d37;
-    background-image: linear-gradient(rgba(232, 77, 55, 0.3), rgba(232, 77, 55, 0.3));
 }
 
 .subscribe {
@@ -1372,28 +1376,32 @@ input[type="radio"].visually-hidden {
 }
 
 .checkbox-filter p {
-    padding: 8px 20px 11px 15px;
+    padding: 8px 20px 9px 14px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
 }
 
 .checkbox-filter label {
     position: relative;
-    padding-left: 32px;
-    margin-right: 18px;
+    margin-left: 1px;
+    margin-right: 16px;
 }
 
 .checkbox-filter .checkbox-indicator {
-    background-image: url(../img/checkbox-off.svg);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 23 23'%3E%3Cpath fill='%23FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.8;
-    width: 26px;
-    height: 23px;
-    position: absolute;
-    left: 0px;
-    top: -2px;
+    width: 24px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
 }
+
+.checkbox-filter .filter-value {
+    margin-left: 4px;
+}
+
 
 .checkbox-filter input[type="checkbox"]:hover + .checkbox-indicator,
 .checkbox-filter input[type="checkbox"]:focus + .checkbox-indicator {
@@ -1401,13 +1409,13 @@ input[type="radio"].visually-hidden {
 }
 
 .checkbox-filter input[type="checkbox"]:checked + .checkbox-indicator {
-    background-image: url(../img/checkbox-on.svg);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
     opacity: 0.8;
 }
 
 .checkbox-filter input[type="checkbox"]:checked:hover + .checkbox-indicator,
 .checkbox-filter input[type="checkbox"]:checked:focus + .checkbox-indicator {
-    background-image: url(../img/checkbox-on.svg);
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
     opacity: 1;
 }
 
@@ -1441,6 +1449,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-image img {
     border-radius: 50%;
+    z-index: 2;
+    position: relative
 }
 
 .catalog-item h3 {
@@ -1457,6 +1467,8 @@ input[type="radio"].visually-hidden {
     background-position: 0 center;
     background-size: 100% 2px;
     background-repeat: no-repeat;
+    z-index: 2;
+    position: relative
 }
 
 .catalog-item h3:hover,
@@ -1484,6 +1496,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 210px;
     left: 0;
+    z-index: 2;
 }
 
 .cart-list {
@@ -1499,7 +1512,7 @@ input[type="radio"].visually-hidden {
     padding: 10px 17px;
     bottom: -57px;
     left: 33px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .catalog-item:hover .preview-button {
@@ -1511,7 +1524,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: -6px;
     left: -12px;
-    z-index: -1;
+    z-index: 1;
     width: 293px;
     height: 405px;
     background: rgba(248, 247, 244, 0.2);
