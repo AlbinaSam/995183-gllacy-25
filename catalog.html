@@ -14,7 +14,7 @@
     <header class="main-header container">
         <nav class="main-navigation">
             <a href="index.html" class="main-header-logo">
-                <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого " Глэйси"">
+                <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глэйси">
             </a>
             <ul class="site-navigation">
                 <li class="site-nav-catalog"><a class="site-navigation-current" hreF="catalog.html">Каталог</a>
@@ -27,7 +27,7 @@
                     </ul>
                 </li>
                 <li><a class="site-nav-link" href="#">Доставка и оплата</a></li>
-                <li><a class="site-nav-link" hreF="#">О компании</a></li>
+                <li><a class="site-nav-link" hreF="#">О Компании</a></li>
             </ul>
             <ul class="user-navigation">
                 <li class="user-nav-search"><a class="search" href="#" aria-label="Поиск">
@@ -84,7 +84,7 @@
 
                             <li class="cart-item">
                                 <button type="button" class="delete-item" aria-label="Удалить товар"></button>
-                                <img src="img/product1-small.png" width="33px" height="33px" alt="Фото сливочного мороженого с апельсиновым джемом и цитрусовой стружкой">
+                                <img src="img/product1-small.png" width="33" height="33" alt="Фото сливочного мороженого с апельсиновым джемом и цитрусовой стружкой">
                                 <a href="catalog-item.html">Пломбир с апельсиновым джемом</a>
                                 <span class="weight">1,5 кг x</span>
                                 <span class="sum">200 руб.</span>
@@ -92,7 +92,7 @@
                             </li>
                             <li class="cart-item">
                                 <button type="button" class="delete-item" aria-label="Удалить товар"></button>
-                                <img src="img/product3-small.png" width="33px" height="33px" alt="Фото сливочно-клубничного мороженого с присыпкой из белого шоколада">
+                                <img src="img/product3-small.png" width="33" height="33" alt="Фото сливочно-клубничного мороженого с присыпкой из белого шоколада">
                                 <a href="catalog-item.html">Клубничный пломбир с присыпкой из белого шоколада</a>
                                 <span class="weight">1,5 кг x</span>
                                 <span class="sum">300 руб.</span>
@@ -123,9 +123,6 @@
 
         <h1 class="page-title">Сливочное мороженое</h1>
 
-
-
-
         <section class="filter">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
@@ -142,25 +139,29 @@
 
 
                 <div class="range-filter">
-
                     <div class="price-controls">
                         <p class="filter-name">Цена:</p>
                         <label class="min-price"><input type="text" name="min-price" value="100">руб.&mdash;</label>
                         <label class="max-price"><input type="text" name="max-price" value="500">руб.</label>
-
                     </div>
                     <div class="range-controls">
                         <div class="scale">
                             <div class="bar"></div>
                         </div>
-                        <div class="range-toggle range-toggle-min"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                        <div class="range-toggle range-toggle-min">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
                                 <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
                                 <circle fill="#FFF" cx="10" cy="10" r="10" />
-                                <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg></div>
-                        <div class="range-toggle range-toggle-max"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                                <circle fill="#ABABAB" cx="10" cy="10" r="2" />
+                            </svg>
+                        </div>
+                        <div class="range-toggle range-toggle-max">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
                                 <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
                                 <circle fill="#FFF" cx="10" cy="10" r="10" />
-                                <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg></div>
+                                <circle fill="#ABABAB" cx="10" cy="10" r="2" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
 
@@ -168,25 +169,51 @@
                 <div class="radio-filter">
                     <span class="filter-name">Жирность:</span>
                     <p>
-                        <label><input class="visually-hidden" type="radio" name="fat" value="1"><span class="radio-button-indicator"></span><span class="filter-value">0%</span></label>
-                        <label><input class="visually-hidden" type="radio" name="fat" value="2" checked><span class="radio-button-indicator"></span><span class="filter-value">до 10%</span></label>
-                        <label><input class="visually-hidden" type="radio" name="fat" value="3"><span class="radio-button-indicator"></span><span class="filter-value">до 30%</span></label>
-                        <label><input class="visually-hidden" type="radio" name="fat" value="4"><span class="radio-button-indicator"></span><span class="filter-value">выше 30%</span></label>
+                        <input class="visually-hidden" type="radio" name="fat" value="fat-0" id="fat-0-input">
+                        <label for="fat-0-input" tabindex="0">0%</label>
+                        <input class="visually-hidden" type="radio" name="fat" value="fat-10" id="fat-10-input" checked>
+                        <label for="fat-10-input" tabindex="0">до 10%</label>
+                        <input class="visually-hidden" type="radio" name="fat" value="fat-30" id="fat-30-input">
+                        <label for="fat-30-input" tabindex="0">до 30%</label>
+                        <input class="visually-hidden" type="radio" name="fat" value="fat-more30" id="fat-more30-input">
+                        <label for="fat-more30-input" tabindex="0">выше 30%</label>
                     </p>
                 </div>
-
 
                 <div class="checkbox-filter">
                     <span class="filter-name">Наполнители:</span>
                     <p>
-                        <label><input class="visually-hidden" type="checkbox" name="chocolate" checked><span class="checkbox-indicator"></span><span class="filter-value">шоколадные</span></label>
-                        <label><input class="visually-hidden" type="checkbox" name="sugar-powder" checked><span class="checkbox-indicator"></span><span class="filter-value">сахарные присыпки</span></label>
-                        <label><input class="visually-hidden" type="checkbox" name="fruit"><span class="checkbox-indicator"></span><span class="filter-value">фрукты</span></label>
-                        <label><input class="visually-hidden" type="checkbox" name="syrup"><span class="checkbox-indicator"></span><span class="filter-value">сиропы</span></label>
-                        <label><input class="visually-hidden" type="checkbox" name="jam"><span class="checkbox-indicator"></span><span class="filter-value">джемы</span> </label>
+                        <label>
+                            <input class="visually-hidden" type="checkbox" name="chocolate" checked>
+                            <span class="checkbox-indicator"></span>
+                            <span class="filter-value">шоколадные</span>
+                        </label>
+
+                        <label>
+                            <input class="visually-hidden" type="checkbox" name="sugar-powder" checked>
+                            <span class="checkbox-indicator"></span>
+                            <span class="filter-value">сахарные присыпки</span>
+                        </label>
+
+                        <label>
+                            <input class="visually-hidden" type="checkbox" name="fruit">
+                            <span class="checkbox-indicator"></span>
+                            <span class="filter-value">фрукты</span>
+                        </label>
+
+                        <label>
+                            <input class="visually-hidden" type="checkbox" name="syrup">
+                            <span class="checkbox-indicator"></span>
+                            <span class="filter-value">сиропы</span>
+                        </label>
+
+                        <label>
+                            <input class="visually-hidden" type="checkbox" name="jam">
+                            <span class="checkbox-indicator"></span>
+                            <span class="filter-value">джемы</span>
+                        </label>
                     </p>
                 </div>
-
 
                 <button type="submit" class="filter-button">Применить</button>
             </form>
@@ -207,7 +234,7 @@
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>310 &#8381;</b>
+                        <b>310&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -221,7 +248,7 @@
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>380 &#8381;</b>
+                        <b>380&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -235,7 +262,7 @@
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>355 &#8381;</b>
+                        <b>355&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -249,7 +276,7 @@
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>415 &#8381;</b>
+                        <b>415&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -259,11 +286,11 @@
                         <p class="catalog-item-image">
                             <img src="img/product5.jpg" width="267" height="267" alt="Фото сливочного мороженого с брусничным джемом">
                         </p>
-                        <h3>Сливочное с брусничным джемом</h3>
+                        <h3>Сливочное с брусничным<br>джемом</h3>
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>325 &#8381;</b>
+                        <b>325&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -277,7 +304,7 @@
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>410 &#8381;</b>
+                        <b>410&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -291,7 +318,7 @@
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>375 &#8381;</b>
+                        <b>375&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -305,7 +332,7 @@
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>320 &#8381;</b>
+                        <b>320&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -315,11 +342,11 @@
                         <p class="catalog-item-image">
                             <img src="img/product9.jpg" width="267" height="267" alt="Фото сливочно-ванильного мороженого с кусочками шоколада">
                         </p>
-                        <h3>Сливочно-ванильное с кусочками шоколада</h3>
+                        <h3>Сливочно-ванильное с<br>кусочками шоколада</h3>
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>440 &#8381;</b>
+                        <b>440&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -333,7 +360,7 @@
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>435 &#8381;</b>
+                        <b>435&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -347,7 +374,7 @@
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>355 &#8381;</b>
+                        <b>355&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -361,7 +388,7 @@
                     </a>
                     <a href="#" class="button preview-button">Быстрый просмотр</a>
                     <p class="catalog-item-price">
-                        <b>420 &#8381;</b>
+                        <b>420&#8381;</b>
                         <span>/кг</span>
                     </p>
                 </li>
@@ -428,7 +455,6 @@
 
         </div>
     </footer>
-
 
 </body>
 
