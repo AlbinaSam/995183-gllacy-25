@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
+   
 </head>
 
 <body>
@@ -63,9 +65,9 @@
                             <h2 class="visually-hidden">Вход</h2>
                             <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
                                 <label class="visually-hidden" for="user-email">Email</label>
-                                <input type="email" name="email" placeholder="Электронная почта" id="user-email">
+                                <input type="email" name="email" placeholder="Электронная почта" id="user-email" required>
                                 <label class="visually-hidden" for="user-password">Пароль</label>
-                                <input type="password" name="password" placeholder="Пароль" id="user-password">
+                                <input type="password" name="password" placeholder="Пароль" id="user-password" required>
                                 <button type="submit" class="button login-form-button">Войти</button>
                                 <p>
                                     <a href="#" class="restore">Забыли пароль?</a>
@@ -219,7 +221,7 @@
                     <div class="index-subscribe">
                         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-                            <input type="email" name="email" placeholder="Электронная почта">
+                            <input type="email" name="email" placeholder="Электронная почта" required>
                             <button type="submit" class="button subscribe-button">Отправить</button>
                         </form>
                     </div>
@@ -230,7 +232,7 @@
 
         <section class="map">
             <h2 class="visually-hidden">Где мы находимся</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1900101241517!2d30.32542578368358!3d59.93886219879318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559935120640!5m2!1sru!2sru" width="600" height="450" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1900101241517!2d30.32542578368358!3d59.93886219879318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559935120640!5m2!1sru!2sru" width="600" height="430" style="border:0" allowfullscreen></iframe>
             <div class="address-card">
                 <p>Адрес главного офиса<br> и офлайн - магазина:</p>
                 <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -301,11 +303,13 @@
             <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
                 <input type="text" name="name" placeholder="Как вас зовут?">
                 <input type="email" name="email" placeholder="Ваша почта для ответа?">
-                <textarea placeholder="Напишите что нибудь..."></textarea>
+                <textarea placeholder="Напишите что нибудь..." name="area"></textarea>
                 <button type="submit" class="button feedback-button">Отправить</button>
             </form>
         </section>
     </div>
+    
+     <script src="js/popup.js"></script>
 </body>
 
 </html>

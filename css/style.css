@@ -51,11 +51,11 @@ input[type="radio"].visually-hidden {
 }
 
 .site-wrapper::before {
-    background-image: url("../img/slider-item2.png");
+    background-image: url("../img/slide2.png");
 }
 
 .site-wrapper::after {
-    background-image: url("../img/slider-item3.png");
+    background-image: url("../img/slide3.png");
 }
 
 .main-navigation {
@@ -490,13 +490,14 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
 }
 
-.modal-feedback .feedback-form input {
+.modal-feedback .feedback-form input[type="text"], 
+.modal-feedback .feedback-form input[type="email"] {
     font-family: inherit;
     box-sizing: border-box;
     padding: 12px 15px 8px;
     font-size: 16px;
     line-height: 24px;
-    color: #999999;
+    color: #323232;
     border: none;
     box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
     border-radius: 5px;
@@ -513,7 +514,7 @@ input[type="radio"].visually-hidden {
     padding: 12px 15px;
     font-size: 16px;
     line-height: 24px;
-    color: #999999;
+    color: #323232;
     border: none;
     box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
     border-radius: 5px;
@@ -534,6 +535,31 @@ input[type="radio"].visually-hidden {
 .feedback-button {
     padding: 10px 24px;
     margin-left: auto;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(2000px);}
+    70% {transform: translateY(30px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0)};
+}
+
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translatex(10px);}
+    20%, 40%, 60%, 80% {transform: translateX(-10px);}
+}
+
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
 }
 
 .container {
