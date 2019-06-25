@@ -7,6 +7,7 @@ var secondField = popup.querySelector("[name=email]");
 var storage = localStorage.getItem("firstField");
 var isStorageSupport = true;
 var storage = "";
+var overlay = document.querySelector(".feedback-overlay");
 
 try {
     storage = localStorage.getItem("firstField");
@@ -17,6 +18,7 @@ try {
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
+    overlay.classList.add("overlay-show");
 
     if (storage) {
         firstField.value = storage;
@@ -31,6 +33,7 @@ close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
+    overlay.classList.remove("overlay-show");
 });
 
 form.addEventListener("submit", function (evt) {
