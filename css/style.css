@@ -4,7 +4,6 @@ body {
     color: #ffffff;
     font-weight: bold;
     background-color: #849d8f;
-
 }
 
 a {
@@ -641,7 +640,6 @@ input[type="radio"].visually-hidden {
     20%, 40%, 60%, 80% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
 }
 
-
 .modal-error {
     -webkit-animation-name: shake;
             animation-name: shake;
@@ -747,12 +745,14 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/raspberry-bg.jpg);
     background-position: 0 0;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .chocolate-offer {
     background-image: url(../img/chocolate-bg.jpg);
     background-position: 0 0;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .raspberry-offer h2,
@@ -861,7 +861,6 @@ input[type="radio"].visually-hidden {
     line-height: 45px;
 }
 
-
 .hit-list-item span {
     font-size: 30px;
     line-height: 45px;
@@ -904,7 +903,7 @@ input[type="radio"].visually-hidden {
 .features {
     background-image: url(../img/waffles-bg.jpg);
     background-position: 0 0;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     border-radius: 15px;
     margin-bottom: 40px;
     padding: 26px 0 1px;
@@ -1000,6 +999,7 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1012,6 +1012,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/article-bg.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 520px;
     padding: 25px 20px;
     border-radius: 15px;
@@ -1054,7 +1055,9 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/bg-post.svg);
     background-position: 0 0;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 5px 5px 5px 6px;
+    border-radius: 10px;
 }
 
 .index-subscribe {
@@ -1147,7 +1150,6 @@ input[type="radio"].visually-hidden {
     top: 63px;
     right: 27px;
     width: 252px;
-    height: 245px;
     padding: 30px 25px;
     background: #ffffff;
     color: #323232;
@@ -1155,7 +1157,6 @@ input[type="radio"].visually-hidden {
     line-height: 20px;
     font-weight: 400;
     border-radius: 10px;
-    color: #323232;
 }
 
 .address-card p {
@@ -1183,6 +1184,7 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
     padding: 10px 27px 10px 28px;
     margin-top: 22px;
+
 }
 
 .site-navigation-current {
@@ -1644,7 +1646,7 @@ input[type="radio"].visually-hidden {
     line-height: 22px;
     text-decoration: none;
     margin: 0;
-    padding: 0px;
+    padding: 0;
     padding-bottom: 15px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(255, 255, 255, 0.2)));
     background-image: -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0.2) 50%);
@@ -1711,11 +1713,11 @@ input[type="radio"].visually-hidden {
 .catalog-item:hover::after {
     content: "";
     position: absolute;
-    top: -6px;
+    top: -7px;
     left: -12px;
     z-index: 1;
     width: 293px;
-    height: 405px;
+    height: 124%;
     background: rgba(248, 247, 244, 0.2);
     border-radius: 5px;
 }
